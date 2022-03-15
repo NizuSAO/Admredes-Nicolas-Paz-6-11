@@ -1,0 +1,12 @@
+name: Creo el script
+
+on: [push]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ejecuto un script
+        run: echo "Link Start"
