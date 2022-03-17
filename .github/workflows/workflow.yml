@@ -37,6 +37,37 @@ jobs:
         
       - name: Movimiento
         run: pwd
+      
+      - name: move
+        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start
+      
+      - name: nsjs
+        run: mkdir alumno
+        
+      - name: dell
+        run: mkdir /alumno/informatica
+        
+      - name: hdbfjf
+        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno
+        
+      - name: hfbh
+        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno/informatica
+        
+      - name: nice
+        run: mkdir alumnosinf
+        
+      - name: Block
+        run: mkdir /alumnosinf/notasinf
+        
+      - name: abstrac
+        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno/informatica/alumnosinf
+        
+      - name: abstracice
+        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno/informatica/alumnosinf/notasinf
+        
+      
+        
+      
         
 
         
