@@ -11,11 +11,3 @@ jobs:
       - name: Ejecuto un script
         run: echo "Link Start"
         
-      - name: Ejercicio
-        run: pwd 
-        
-      - name: ns
-        run: cd folder
-        
-      - name: bsj
-        run: ls 
