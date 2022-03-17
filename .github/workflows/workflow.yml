@@ -11,4 +11,4 @@ jobs:
       - name: Ejecuto un script
         run: echo "Link Start"
       - name: Ejercicio
-        run: ls /master
+        run: ls -
