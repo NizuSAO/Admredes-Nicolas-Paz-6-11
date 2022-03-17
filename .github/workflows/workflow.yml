@@ -20,5 +20,8 @@ jobs:
       - name: cd
         run: ls /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
         
+      - name: shark
+        run: cp linkstart.txt /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
+        
         
         
