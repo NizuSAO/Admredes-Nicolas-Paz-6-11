@@ -29,5 +29,11 @@ jobs:
       - name: swordman
         run: cp linkstart.txt /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start
         
+      - name: Icecream
+        run: ls /etc
+       
+      - name: Airforce
+        run: ls /
+        
         
         
