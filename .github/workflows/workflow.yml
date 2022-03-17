@@ -39,7 +39,7 @@ jobs:
         run: pwd
       
       - name: move
-        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start
+        run: cd start
       
       - name: nsjs
         run: mkdir alumno
@@ -48,10 +48,10 @@ jobs:
         run: mkdir /alumno/informatica
         
       - name: hdbfjf
-        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno
+        run: cd alumno
         
       - name: hfbh
-        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno/informatica
+        run: cd informatica
         
       - name: nice
         run: mkdir alumnosinf
@@ -60,10 +60,10 @@ jobs:
         run: mkdir /alumnosinf/notasinf
         
       - name: abstrac
-        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno/informatica/alumnosinf
+        run: cd alumnosinf
         
       - name: abstracice
-        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno/informatica/alumnosinf/notasinf
+        run: cd notasinf
         
       
         
