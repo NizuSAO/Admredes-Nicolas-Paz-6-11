@@ -36,16 +36,7 @@ jobs:
         run: ls /
         
       - name: Movimiento
-        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start
-        
-      - name: nsjs
-        run: mkdir alumno
-        
-      - name: dell
-        run: mkdir /alumno/alumnosinf
-        
-      - name: hdbfjf
-        run: cd home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start/alumno/alumnosinf
+        run: pwd
         
 
         
