@@ -21,7 +21,13 @@ jobs:
         run: ls /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
         
       - name: shark
-        run: cp linkstart.txt /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
+        run: cat > linkystart.txt
+        
+      - name: hello
+        run: mkdir start
+        
+      - name: nsh
+        cp linkystart.txt /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start
         
         
         
