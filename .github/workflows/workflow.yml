@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Ejecuto un script
         run: echo "Link Start"
-      - name: ejercicio 3
+      - name: ejercicio 2
         run: ls /etc
