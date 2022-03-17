@@ -14,6 +14,11 @@ jobs:
       - name: pwd
         run: pwd
         
-
+      - name: ls
+        run: cd /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
+       
+      - name: cd
+        run: ls
+        
         
         
