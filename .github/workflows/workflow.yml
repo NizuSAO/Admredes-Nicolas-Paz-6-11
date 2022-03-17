@@ -10,4 +10,10 @@ jobs:
     steps:
       - name: Ejecuto un script
         run: echo "Link Start"
+            
+      - name: pwd
+        run: pwd
+        
+
+        
         
