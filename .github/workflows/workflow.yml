@@ -65,6 +65,20 @@ jobs:
       - name: abstracice
         run: cd notasinf
         
+      - name: ndsks
+        run: cd.. /
+        
+      - name: nsjd
+        run: cd.. /
+        
+      - name: nfjnf
+        run: cd.. /
+      
+      - name: ndjd
+        run: pwd
+        
+        
+        
       
         
       
