@@ -35,11 +35,11 @@ jobs:
       - name: Airforce
         run: ls /
         
-      - name: Movimiento
-        run: pwd
-      
       - name: move
         run: cd start
+        
+      - name: Movimiento
+        run: pwd
         
       - name: Lectura
         run: ls
