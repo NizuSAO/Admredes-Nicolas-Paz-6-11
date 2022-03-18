@@ -77,6 +77,11 @@ jobs:
       - name: ndjd
         run: pwd
         
+      - name: ndknsd
+        run: mkdir profesoresinf
+        
+      - name: bhbds
+        run: mkdir aulainf
         
         
       
