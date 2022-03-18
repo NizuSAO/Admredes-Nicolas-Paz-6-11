@@ -83,6 +83,10 @@ jobs:
       - name: bhbds
         run: mkdir aulainf
         
+      - name:nice
+        run: pwd
+        
+        
         
       
         
