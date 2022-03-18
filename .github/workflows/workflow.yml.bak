@@ -1,0 +1,98 @@
+name: Creo el script
+
+on: [push]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ejecuto un script
+        run: echo "Link Start"
+            
+      - name: pwd
+        run: pwd
+        
+      - name: ls
+        run: cd /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
+       
+      - name: cd
+        run: ls 
+        
+      - name: shark
+        run: cat > linkstart.txt
+        
+      - name: hello
+        run: mkdir start
+        
+      - name: swordman
+        run: cp linkstart.txt /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11/start
+        
+      - name: Icecream
+        run: ls /etc
+       
+      - name: Airforce
+        run: ls /
+        
+      - name: move
+        run: cd start
+        
+      - name: Movimiento
+        run: pwd
+        
+      - name: Lectura
+        run: ls
+      
+      - name: nsjs
+        run: mkdir alumno
+        
+      - name: dell
+        run: cd alumno
+        
+      - name: hdbfjf
+        run: mkdir informatica
+        
+      - name: hfbh
+        run: cd informatica
+        
+      - name: nice
+        run: mkdir alumnosinf
+        
+      - name: Block
+        run: cd alumnosinf
+        
+      - name: abstrac
+        run: mkdir notasinf
+        
+      - name: abstracice
+        run: cd notasinf
+        
+      - name: ndsks
+        run: cd /..
+        
+      - name: nsjd
+        run: cd /..
+      
+      - name: ndjd
+        run: pwd
+        
+      - name: ndknsd
+        run: mkdir profesoresinf
+        
+      - name: bhbds
+        run: mkdir aulainf
+        
+      - name:nice
+        run: pwd
+        
+        
+        
+      
+        
+      
+        
+
+        
+        
+        
