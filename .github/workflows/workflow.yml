@@ -18,7 +18,7 @@ jobs:
         run: cd /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
        
       - name: cd
-        run: ls /home/runner/work/Admredes-Nicolas-Paz-6-11/Admredes-Nicolas-Paz-6-11
+        run: ls 
         
       - name: shark
         run: cat > linkstart.txt
@@ -40,6 +40,9 @@ jobs:
       
       - name: move
         run: cd start
+        
+      - name: Lectura
+        run: ls
       
       - name: nsjs
         run: mkdir alumno
