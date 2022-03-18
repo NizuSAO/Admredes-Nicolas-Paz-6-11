@@ -66,13 +66,10 @@ jobs:
         run: cd notasinf
         
       - name: ndsks
-        run: cd.. /
+        run: cd.. /alumnosinf
         
       - name: nsjd
-        run: cd.. /
-        
-      - name: nfjnf
-        run: cd.. /
+        run: cd.. /informatica
       
       - name: ndjd
         run: pwd
