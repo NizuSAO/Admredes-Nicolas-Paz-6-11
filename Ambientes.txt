@@ -1,0 +1,16 @@
+ADM.SIST.REDES
+
+AMBIENTES:
+A.PRODUCCION:
+Es el espacio donde operara el sistema o aplicacion, es decir, es donde se hace uso del servicio por parte de los 
+usuarios finales.
+
+A.STAGING:
+Es una replica casi exacta de un entorno  de produccion para pruebas de software. Los entornos de staging se hacen probar
+codigos, construcciones y actualizaciones para asegurar la calidad bajo el entorno de produccion antes de la implementacion
+de la aplicacion.
+
+A.Pruebas:
+Tendra los mismos caracteristicas de configuraciones y recursos que el ambiente de trabajo anterior, pero aqui se despliegan las versiones
+estables del sistema, para que el equipo de pruebas realice las verificaciones de calidad pertinentes, sin interferir con 
+las actividades del equipo de desarrollo.

@@ -1,0 +1,25 @@
+Tarea Adm Sist Redes:
+CI:
+Son practicas automatizadas para integrar el codigo de diferentes personas que trabajan en ele mismo proyecto.
+
+.El codigo se mezcla(merge) continuamente mediante las pruebas automatizadas
+.Cada nuevo cambio debe ser testeado
+.Su objetivo es facilitar la integracion de nuevos cambios en el codigo.
+
+Ej:
+Desarrollador A y B crearon un codigo lo subieron a su repositorio.
+
+CI server:
+un servidor de continuos integration, este servidor va a obtener el codigo del repositorio se va a ejecutar un proceso, 
+donde adquiere el codigo.
+
+Build:
+Construir un paquete o construir una imagen de docker, le hace una construccion para verificar que no se haya roto nada.
+
+Test:
+Lo que hace este paso es verificar que tu codigo que estas ingresando sea codigo limpio que no rompa otras cosas, de 
+modo que se pueda mezclar con la rama master o main
+
+merge:
+Mezcla todo el codigo a la rama indicada.
+

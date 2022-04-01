@@ -1,0 +1,25 @@
+Tarea Adm Sist Redes:
+CD(Continuos Distribution):
+continuos delivery:
+Liberas automaticamente al repositorio, se refiere a todas las acciones que agarran el codigo, que ya esta testeado
+listo para ser un merge y lo pone en el repositorio.
+
+Continuos Deployment:
+Se encarga de agarrar ese codigo, que esta mergeado, y en tu repositorio, subido al registro de docker esta generado
+el paquete, se encarga de poner eso en produccion, o en los servidores de testing.
+
+Es una disciplina de desarrollo de software donde construyes software de tal manera que puede ser entregado/desplegado 
+a produccion en cualquier momento.
+
+_Apunta a la construccion, prueba y liberacion del software de forma mas rapida y frecuente. Este enfoque ayuda en la 
+reduccion del costo, tiempo y riesgo de la liberacion de versiones.
+
+_La entrega continua consiste en tratar el flujo de despliegue como un sistema a prueba de errores.
+
+_La entrega continua, el producto final no tiene porque siempre ser desplegada en un entorno real, si no en algun 
+servidor de testing.
+
+_En continuos deployment el paso a produccion es automatizado.
+
+_En continuos delivery, el paso a produccion se hace de manera manual.
+

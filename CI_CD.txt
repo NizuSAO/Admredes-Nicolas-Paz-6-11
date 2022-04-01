@@ -1,0 +1,14 @@
+Conclusion:
+CI/CD:
+Asegurarse  que el desarrollador simplemente se tenga que ocupar de hacer su codigo, sus cambios subirlos a un repositorio.
+
+_Por medio de una herramienta de control de versiones GIT
+
+Git commit
+Git Push
+
+Una vez ejecutados estos 2 comandos. automaticamente se disparan todas estas herramientas que se encargan de asegurarse.
+que el codigo sea limpio que este testeado, que se genera esa imagen ese binario, y que haga el deploy a diferentes servidores.
+
+Cada vez que  haces un cambio que va a la branch Main, deberia ir si o si el deploy a testing, de este modo nos aseguramos que todo
+que esta en la branch Main este en un servidor para que la gente lo pueda usar.
