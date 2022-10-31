@@ -61,4 +61,20 @@ public class TestCalculadora extends TestCase{
 		escenario();
 		assertEquals(calculadora.division(4,2)2);
 	}
+		
+	
+	public void testCuadratica () {
+		escenario();
+		assertTrue(calculadora.cuadratica(1,2,1)==(-1,-1);
+	}
+		
+	public void testCuadraticaFail (){
+		escenario();
+		assertNotEquals(calculadora.cuadratica(0,20,1),null);
+	}
+		
+	public void testDividirEquals (){
+		escenario();
+		assertEquals(calculadora.cuadratica(5,1,3)null);
+	}
 }
