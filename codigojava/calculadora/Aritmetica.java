@@ -34,14 +34,13 @@ public class Aritmetica {
 		System.out.print("La division es:" + division);
 	}
 	public void cuadratica() {
-		 double potencia = numero1-4*numero2*numero3;
-		 
-         double x1 = (numero1negativo - Math.sqrt(potencia)/ 2*numero2);
-
-         double x2 = (numero1negativo + Math.sqrt(potencia)/ 2*numero2);
-		
-		System.out.printf("la x1 es: \n" + x1);
-		System.out.printf("la x2 es: \n" + x2);
+		double determinante=Math.pow(numero2,2) - (4*a*c);
+		if(determinante>0)
+		{
+			double x1=( (b*(-1))+Math.sqrt(determinante))/(2*a);
+			double x2=( (b*(-1))-Math.sqrt(determinante))/(2*a);
+			System.out.print("El valor de x1="+x1" y el valor de x2="x2");
 	}
+		else System.out.print("El determinante es negativo y no se puede completar la operaciones")			 
 }
 }
