@@ -11,6 +11,15 @@ public class TestCalculadora extends TestCase{
 		escenario();
 		assertTrue(calculadora.sumar(2,2)==(2+2));
 	}
+	public void testSumarFail () {
+		escenario();
+		assertNotEquals(calculadora.sumar(2,2),5);
+	}
+	public void testSumarEqual(){
+		escenario();
+		assertEquals(calculadora.sumar(2,2),(4));
+	}
+	
 	public void testeRestar () {
 		escenario();
 		assertEquals(3, calculadora.resta(5, 2));;
