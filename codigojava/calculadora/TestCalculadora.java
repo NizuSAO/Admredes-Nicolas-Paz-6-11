@@ -1,10 +1,10 @@
 import junit.framework.TestCase;
 
 public class TestCalculadora extends TestCase{
-	private Calculadora calculadora;
+	private calculadora calculadora;
 	
 	public void escenario() {
-		calculadora = new Calculadora();
+		calculadora = new calculadora();
 	}
 	
 	public void testSumar () {
@@ -13,7 +13,7 @@ public class TestCalculadora extends TestCase{
 	}
 	public void testSumarFail () {
 		escenario();
-		assertNotEquals(calculadora.sumar(2,2),5);
+		assertNotSame(calculadora.sumar(2,2),5);
 	}
 	public void testSumarEqual(){
 		escenario();
@@ -26,12 +26,12 @@ public class TestCalculadora extends TestCase{
 	}
 	public void testRestarFail () {
 		escenario();
-		assertNotEquals(calculadora.resta(3,2),3);
+		assertNotNull(calculadora.resta(3,2));
 	}
 	public void testRestar () {
 		escenario();
-		assertTrue(calculadora.resta(5,3),2);
-	
+		assertTrue(calculadora.resta(5,3)==(5-3));
+	}
 	public void testMultiplicar (){
 		escenario();
 		assertTrue(calculadora.multiplicar(2,2)==(2*2));
@@ -39,12 +39,12 @@ public class TestCalculadora extends TestCase{
 		
 	public void testMultiplicarFail (){
 		escenario();
-		assertNotEquals(calculadora.multiplicar(2,2),1);
+		assertNotNull(calculadora.multiplicar(2,2));
 	}
 		
 	public void testMultiplicarEqual (){
 		escenario();
-		assertEquals(calculadora.multiplicar(2,2)4);
+		assertEquals(calculadora.multiplicar(2,2), 04);
 	}
 		
 	public void testDividir () {
@@ -54,27 +54,27 @@ public class TestCalculadora extends TestCase{
 		
 	public void testDividirFail (){
 		escenario();
-		assertNotEquals(calculadora.division(4,2),3);
+		assertNotNull(calculadora.division(0,2));
 	}
 		
-	public void testDividirEquals (){
+	public void testDividirEquals1(){
 		escenario();
-		assertEquals(calculadora.division(4,2)2);
+		assertEquals(calculadora.division(4,2), 02);
 	}
 		
 	
 	public void testCuadratica () {
 		escenario();
-		assertTrue(calculadora.cuadratica(1,2,1)==(-1,-1);
+		assertTrue(calculadora.Cuadratica(1,2,1)==(-1));
 	}
 		
 	public void testCuadraticaFail (){
 		escenario();
-		assertNotEquals(calculadora.cuadratica(0,20,1),null);
+		assertNotSame(calculadora.Cuadratica(0, 20, 1),null);
 	}
 		
-	public void testDividirEquals (){
+	public void testCuadraticaEquals (){
 		escenario();
-		assertEquals(calculadora.cuadratica(5,1,3)null);
+		assertEquals(calculadora.Cuadratica(5,1,3),null);
 	}
 }
