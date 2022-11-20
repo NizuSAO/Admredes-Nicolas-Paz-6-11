@@ -30,6 +30,12 @@ class ApiCalculadoraApplicationTests {
 		assertEquals(calc.restar(3, 1), 2);
 		assertNotEquals(calc.restar(3, 2), 2);
 	}
+	
+	@Test
+	public void multiplicar(){
+		assertEquals(Calcu.multiplicar(5,2),10);
+		assertNotEquals(Calcu.multiplicar(10,7),50);
+	}
 
 	@Test
 	void dividir() {
