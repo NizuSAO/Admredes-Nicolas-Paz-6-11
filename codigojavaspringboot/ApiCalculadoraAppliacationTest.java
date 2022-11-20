@@ -45,20 +45,4 @@ class ApiCalculadoraApplicationTests {
 
 	}
 	
-	@Test
-	 public void cuadratica() {
-  	double result[] = {1, -5};
-  	assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 0);
- 	}
-	
-	@Test
-
-	 public void cuadratica() {
-  		double var = 991;
-  		double var2 = 9;
-
-  		double result[] = {var, var2};
-
- 	 assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 990);
-
 }
