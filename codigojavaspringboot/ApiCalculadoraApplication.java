@@ -48,7 +48,10 @@ public class ApiCalculadoraApplication {
 
    @GetMapping("/dividir")
    public int dividir(@RequestParam(value="a") int numero1,@RequestParam(value = "b")int numero2) {
-      return numero1 / numero2;
+      if (num2 == 0) {
+			throw new ArithmeticException("No se puede dividir por 0");
+		}
+		return num1 / num2;
    }
 
 }
