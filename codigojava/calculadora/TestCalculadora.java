@@ -66,16 +66,6 @@ public class CalculatorTest {
   double result[] = {1, -5};
   assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 0);
  }
- @Test
 
- public void cuaTestM() {
-  double var = 991;
-  double var2 = 9;
-
-  double result[] = {var, var2};
-
-  assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 990);
-
- }
 }
 
