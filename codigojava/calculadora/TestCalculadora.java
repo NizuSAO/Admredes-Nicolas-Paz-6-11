@@ -1,80 +1,81 @@
-import junit.framework.TestCase;
+package test;
 
-public class TestCalculadora extends TestCase{
-	private calculadora calculadora;
-	
-	public void escenario() {
-		calculadora = new calculadora();
-	}
-	
-	public void testSumar () {
-		escenario();
-		assertTrue(calculadora.sumar(2,2)==(2+2));
-	}
-	public void testSumarFail () {
-		escenario();
-		assertNotSame(calculadora.sumar(2,2),5);
-	}
-	public void testSumarEqual(){
-		escenario();
-		assertEquals(calculadora.sumar(2,2),(4));
-	}
-	
-	public void testeRestarEqual () {
-		escenario();
-		assertEquals(3, calculadora.resta(5, 2));;
-	}
-	public void testRestarFail () {
-		escenario();
-		assertNotNull(calculadora.resta(3,2));
-	}
-	public void testRestar () {
-		escenario();
-		assertTrue(calculadora.resta(5,3)==(5-3));
-	}
-	public void testMultiplicar (){
-		escenario();
-		assertTrue(calculadora.multiplicar(2,2)==(2*2));
-	}
-		
-	public void testMultiplicarFail (){
-		escenario();
-		assertNotNull(calculadora.multiplicar(2,2));
-	}
-		
-	public void testMultiplicarEqual (){
-		escenario();
-		assertEquals(calculadora.multiplicar(2,2), 04);
-	}
-		
-	public void testDividir () {
-		escenario();
-		assertTrue(calculadora.division(4, 2)==(4/2));
-	}
-		
-	public void testDividirFail (){
-		escenario();
-		assertNotNull(calculadora.division(0,2));
-	}
-		
-	public void testDividirEquals1(){
-		escenario();
-		assertEquals(calculadora.division(4,2), 02);
-	}
-		
-	
-	public void testCuadratica () {
-		escenario();
-		assertTrue(calculadora.Cuadratica(1,2,1)==(-1));
-	}
-		
-	public void testCuadraticaFail (){
-		escenario();
-		assertNotSame(calculadora.Cuadratica(0, 20, 1),null);
-	}
-		
-	public void testCuadraticaEquals (){
-		escenario();
-		assertEquals(calculadora.Cuadratica(5,1,3),null);
-	}
+import calcu.Calculator;
+import org.testng.annotations.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculatorTest {
+ Calculator calculator = new Calculator();
+
+ @Test
+ public void sumaTest() {
+  assertEquals(calculator.suma(1, 2), 3);
+
+
+ }
+ 
+ @Test 
+ public void sumaMalTest(){
+   assertNotEquals(calculator.suma(5, 5), 9);
+
+ }
+
+ @Test
+ public void restaTest() {
+  assertEquals(calculator.resta(2, 1), 1);
+
+ }
+@Test
+ public void restaMalTest(){
+   assertNotEquals(calculator.resta(8, 5), 2);
+
+ }
+ 
+ @Test
+ public void multiplicacionTest() {
+  assertEquals(calculator.multiplicacion(3, 3), 9);
+
+
+ }
+ @Test 
+ public void multiplicacionMalTest(){
+   assertNotEquals(calculator.multiplicacion(5, 3), 10);
+
+ }
+
+ @Test
+ public void dividirTest() {
+  assertEquals(calculator.dividir(4, 2), 2);
+
+
+ }
+ @Test 
+ public void dividirMalTest(){
+ assertNotEquals(calculator.dividir(18, 3), 2);
+
+ }
+ 
+ @Test (expected = ArithmeticException.class)
+ public void divTestExcep(){
+      calculator.dividir(2,0);
+ }
+
+ @Test
+ public void cuaTest() {
+  double result[] = {1, -5};
+  assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 0);
+ }
+ @Test
+
+ public void cuaTestM() {
+  double var = 991;
+  double var2 = 9;
+
+  double result[] = {var, var2};
+
+  assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 990);
+
+ }
 }
+
