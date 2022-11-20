@@ -39,9 +39,7 @@ class ApiCalculadoraApplicationTests {
 
 	@Test //(expected = ArithmeticException.class)
 	public void expecionDividir() {
-		Assertions.assertThrows(ArithmeticException.class, ()-> {
-			calc.dividir(0, 0);
-		});
+		Assertions.assertThrows(ArithmeticException.class, ()-> {calc.dividir(2, 0);});
 
 	}
 	
