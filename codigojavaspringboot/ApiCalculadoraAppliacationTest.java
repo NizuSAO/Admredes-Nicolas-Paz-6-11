@@ -44,24 +44,21 @@ class ApiCalculadoraApplicationTests {
 		});
 
 	}
-
+	
 	@Test
-	void multiplicar() {
-		assertEquals(calc.multiplicar(2, 2), 4);
-		assertNotEquals(calc.multiplicar(2, 3), 5);
-	}
-
+	 public void cuadratica() {
+  	double result[] = {1, -5};
+  	assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 0);
+ 	}
+	
 	@Test
-	void cuadratica() {
-		assertEquals(calc.cuadratica(1, 2, 1),(-1));
-		assertNotEquals(calc.cuadratica(0, 20, 1), null);
-	}
 
-	@Test
-	public void ExcepcionCuadratica() {
-		Assertions.assertThrows(ArithmeticException.class, () -> {
-			calc.cuadratica(5, 1, 3);
-		});
+	 public void cuadratica() {
+  		double var = 991;
+  		double var2 = 9;
 
-	}
+  		double result[] = {var, var2};
+
+ 	 assertArrayEquals(calculator.cuadratica(1, 4, (-5)), result, 990);
+
 }
