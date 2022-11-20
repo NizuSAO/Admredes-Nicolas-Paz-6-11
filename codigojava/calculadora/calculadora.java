@@ -1,27 +1,37 @@
+package calcu;
 
-public class calculadora {
+public class Calculator {
 
-	public int sumar (int a, int b) {
-		return a+b;
-	}
-	public int resta (int a, int b) {
-		return a-b;
-	}
-	public int multiplicar (int a, int b) {
-		return a*b;
-	}
-	public int division (int a, int b) {
-		return a/b;
-	}
-	
-	public double Cuadratica(int a, int b, int c) {
-		return(-b +-Math.sqrt((b*b)-(4*a*c))) / 2*a;
-	}
+    public int suma(int numero1, int numero2) {
+        return numero1 + numero2;
 
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    }
 
-	}
+    public int resta(int numero1, int numero2) {
+        return numero1 - numero2;
 
-}
+    }
+
+    public int multiplicacion(int numero1, int numero2) {
+        return numero1 * numero2;
+    }
+
+    public int dividir(int numero1, int numero2) {
+        return numero1 / numero2;
+
+    }
+
+
+        public double[] cuadratica(double a, double b, double c) {
+            if (a != 0) {
+                double bb = b * b;
+                double raiz = (double) Math.sqrt((bb) - (4 * a * (c)));
+                double cuaN = ((-b) - (raiz)) / (2 * a);
+                double cuaM = ((-b) + (raiz)) / (2 * a);
+
+                return new double[]{cuaN, cuaM};
+            }
+            System.out.print("NEVER");
+            return new double[]{0};
+        }
+    }
