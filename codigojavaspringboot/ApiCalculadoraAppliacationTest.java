@@ -13,40 +13,71 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class ApiCalculadoraApplicationTests {
 
-   ApiCalculadoraApplication calc = new ApiCalculadoraApplication();
-   @Test
-   void contextLoads() {
-   }
+	ApiCalculadoraApplication calculator = new ApiCalculadoraApplication();
 
-   @Test
-	void sumar() {
-
-		assertEquals(calc.sumar(1, 2), 3);
-		assertNotEquals(calc.sumar(1, 2), 4);
+	@Test
+	public void sumaTest() {
+		assertEquals(calculator.sumar(1, 2), 3);
 	}
 
 	@Test
-	void resta() {
-		assertEquals(calc.restar(3, 1), 2);
-		assertNotEquals(calc.restar(3, 2), 2);
+	public void sumaTestFail() {
+		assertNotEquals(calculator.sumar(4,1),3);
 	}
-	
-	@Test
-	public void multiplicar(){
-		assertEquals(Calcu.multiplicar(5,2),10);
-		assertNotEquals(Calcu.multiplicar(10,7),50);
-	}
+
 
 	@Test
-	void dividir() {
-		assertEquals(calc.dividir(4, 2), 2);
-		assertNotEquals(calc.dividir(3, 3), 3);
+	public void restarTest() {
+		assertEquals(calculator.restar(5, 2), 3);
 	}
 
-	@Test //(expected = ArithmeticException.class)
-	public void expecionDividir() {
-		Assertions.assertThrows(ArithmeticException.class, ()-> {calc.dividir(2, 0);});
+	@Test
+	public void restarTestFail() {
+		assertNotEquals(calculator.restar(3,1),3);
+	}
+
+	@Test
+	public void multiplicarTest() {
+		assertEquals(calculator.multiplicar(5, 2), 10);
+	}
+
+	@Test
+	public void multiplicarTestFail() {
+		assertNotEquals(calculator.multiplicar(4,1),3);
+	}
+
+	@Test
+	public void dividirTest() {
+		assertEquals(calculator.dividir(6, 2), 3);
+	}
+
+	@Test
+	public void dividirTestFail() {
+		assertNotEquals(calculator.dividir(6, 2), 4);
+	}
+	@Test
+	public void dividirException() {
+		Assertions.assertThrows(ArithmeticException.class,()->{
+				calculator.dividir(1,0);
+		});
 
 	}
-	
+
+	@Test
+	public void raizCuadraticaTest(){
+		assertArrayEquals(calculator.cuadratica(1,2,-8),new double[]{2,-4});
+	}
+	@Test
+	public void raizCuadraticaTestFail(){
+		assertNotEquals(calculator.cuadratica(1,2,80),new double[]{2,-4});
+	}
+	@Test
+	public void raizCuadraticaException(){
+		Assertions.assertThrows(ArithmeticException.class,()->{
+			calculator.cuadratica(1,0,-8); // sí b vale 0
+			calculator.cuadratica(0,2,-8); // sí a vale 0
+		});
+	}
+
+	 
 }
